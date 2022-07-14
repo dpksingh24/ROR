@@ -4,9 +4,6 @@ users = [
     {username: 'dpk', password: 'password3'},
 ]
 puts "welcome to the authenticatior"
-20.times {print "-"}
-puts "\nthis program will take inout from the user and compare password"
-# puts "if password is correct, you will be get back the user objects"
 
 def authentication_user(username, password, listOfUsers) 
     listOfUsers.each do |user| 
@@ -15,7 +12,7 @@ def authentication_user(username, password, listOfUsers)
         end
     end
     #no need to write the return in the end
-    return "Credentials were not correct"
+    "Credentials were not correct"
 end
 
 
